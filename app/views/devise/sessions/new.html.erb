@@ -1,0 +1,78 @@
+    <main role="main">
+
+      <div id="main">
+
+        <section class="row section text-light" style="background-color:#FFCE54;">
+          <div class="row-content buffer even clear-after" style ="padding-top:0px;padding-bottom:0px">
+            <div class="slogan animation">
+              <h2>ESTAS</h2>  
+              <p>ログインはこちらから。</p>            
+            </div><!-- slogan -->       
+          </div>
+        </section>  
+
+
+
+<section class="row section " >
+  <div class="row-content buffer even clear-after"> 
+    <div class = "column five">
+      <h3 style = "margin-top:0px;">Facebookからログイン</h3>
+      <p>Facebook認証を行うと、より簡単にログインすることができます。</p>
+      <%= link_to "Facebookでログイン",user_omniauth_authorize_path(:facebook), :class=>"button blue" %>
+    </div>
+    <div class="column one">
+    </div>
+    <div class="column six last">
+
+
+
+     <h3 style = "margin-top:0px">メールアドレスからログイン</h3>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true ,placeholder: "メールアドレス"%>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" ,placeholder: "パスワード"%>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "ログイン",:class => "button red" %>
+      </div>
+      <% end %>
+    </div>
+
+  </div>  
+</section>  
+
+</div><!-- id-main -->
+</main><!-- main -->
+
+    <footer role="contentinfo">
+      <div class="row">
+        <div class="row-content buffer clear-after">
+          <section id="bottom-footer">
+            <p class="keep-left"> </p>
+            <p class="keep-right">&copy; 2015 <a href="http://www.kipri.co.jp/" alt="Kipri Co., Ltd.">Kipri Co., Ltd.</a>All Rights Reserved.</p>
+          </section><!-- bottom-footer -->      
+        </div><!-- row-content -->  
+      </div><!-- row -->  
+    </footer>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>    
+<script src="/js/plugins.js"></script>
+<script src="/js/beetle.js"></script>
+
+</body>
+
+</html>

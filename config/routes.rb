@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :entries
+  devise_for :users, :controllers => {
+  :omniauth_callbacks => 'users/omniauth_callbacks' ,
+  :sessions      => "users/sessions",
+  :registrations => "users/registrations",
+  :passwords     => "users/passwords"
+}
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  root 'static_pages#home'
+  get 'static_pages/home'
+
+  get 'static_pages/about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

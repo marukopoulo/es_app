@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EsApp</title>
+  <title>ESTASS 1000文字1500円のES添削サービス</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="The Page Description">
+  <style type="text/css">@-ms-viewport{width: device-width;}</style>
+  <link rel="stylesheet" href="/css/layers.min.css" media="screen">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" media="screen"> 
+  <link rel="stylesheet" href="/style.css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">     
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+  </head>
+<body　class = "page">
+  <header role="banner" class="transparent light">
+      <div class="row">
+        <div class="nav-inner row-content buffer-left buffer-right even clear-after">
+          <div id="brand">
+            <h1 class="reset"><!--<img src="img/logo.png" alt="logo">--><a href="/">ESTASS</a></h1>
+          </div><!-- brand -->
+          <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+          <nav>
+            <ul class="reset" role="navigation">
+              <li class="menu-item">
+                <%= link_to "ホーム" ,root_path %>
+              </li>
+              <li class="menu-item">
+                <%= link_to "概要",root_path(anchor: "main") %>   
+              </li>
+              <li class="menu-item">
+                <%= link_to "特徴",root_path(anchor: "feature") %>             
+              </li>
+                <li class = "menu-item"><%= link_to "料金",root_path(anchor: "price") %>   </li>
+              <li class="menu-item">
+               <%= link_to "利用者の声",root_path(anchor: "users") %>   
+              </li>
+              <li class ="menu-item"><%= link_to "登録する",new_user_registration_path, :class=>"button red",:style=>"margin:7px -10px 0px 0px" %></li>
+              <li class ="menu-item"><%= link_to "ログイン",new_user_session_path, :class=>"button blue",:style=>"margin-top:7px;" %></li>
+
+
+            </ul>
+          </nav>
+        </div><!-- row-content -->
+
+      </div><!-- row -->  
+    </header>
 
 <%= yield %>
 

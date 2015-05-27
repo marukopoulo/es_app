@@ -1,0 +1,33 @@
+<h1>StaticPages#home</h1>
+<p>Find me in app/views/static_pages/home.html.erb</p>
+  <nav>
+    <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
+    <% if user_signed_in? %> 
+      <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
+      <!-- *_path はUserモデルを作成したときに、
+        deviseにより自動で作成されてますので、rake routesで確認できます -->
+      
+      <% if current_user.name == nil %>
+      Logged in as <strong><%= current_user.email %></strong>.
+      <% else %>
+      Logged in as <strong><%= current_user.name %></strong>.
+      <% end %>
+
+      <%= link_to 'プロフィール変更', edit_user_registration_path %> |
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "サインイン", new_user_registration_path %> |
+      <%= link_to "ログイン", new_user_session_path %>|
+      <%= link_to "facebookログイン",user_omniauth_authorize_path(:facebook) %>
+    <% end %>
+  </nav>
+<% if user_signed_in? %> 
+      <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
+      <!-- *_path はUserモデルを作成したときに、
+        deviseにより自動で作成されてますので、rake routesで確認できます -->
+      
+       <ul>
+       	<li><%= current_user.name %></li>
+      		<li><%= current_user.email %></li>
+      		<li><img src ="<%= current_user.image %>?type=large"></li>
+      <% end %>
