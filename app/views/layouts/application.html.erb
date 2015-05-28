@@ -44,13 +44,17 @@
               <li class="menu-item">
                 <%= link_to "特徴",root_path(anchor: "feature") %>             
               </li>
-                <li class = "menu-item"><%= link_to "料金",root_path(anchor: "price") %>   </li>
               <li class="menu-item">
-               <%= link_to "利用者の声",root_path(anchor: "users") %>   
+               <%= link_to "利用シーン",root_path(anchor: "sceen") %>   
               </li>
+                <li class = "menu-item"><%= link_to "料金",root_path(anchor: "price") %>   </li>
+
+              <% if user_signed_in? %> 
+              <li class ="menu-item"><%= link_to "ログアウト",destroy_user_session_path, method: :delete, :class=>"button blue",:style=>"margin-top:7px;" %></li>
+              <% else %>
               <li class ="menu-item"><%= link_to "登録する",new_user_registration_path, :class=>"button red",:style=>"margin:7px -10px 0px 0px" %></li>
               <li class ="menu-item"><%= link_to "ログイン",new_user_session_path, :class=>"button blue",:style=>"margin-top:7px;" %></li>
-
+              <% end %>
 
             </ul>
           </nav>

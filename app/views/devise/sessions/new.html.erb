@@ -6,8 +6,7 @@
           <div class="row-content buffer even clear-after" style ="padding-top:0px;padding-bottom:0px">
             <div class="slogan animation">
               <h2>ESTAS</h2>  
-              <p>ログインはこちらから。</p>            
-            </div><!-- slogan -->       
+              <p>ESTASSへようこそ。６月中旬よりサービスを開始します。<br>ログインはこちらのページから。</p>            </div><!-- slogan -->       
           </div>
         </section>  
 
@@ -30,7 +29,7 @@
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true ,placeholder: "メールアドレス"%>
+        <%= f.email_field :email, autofocus: false ,placeholder: "メールアドレス"%>
       </div>
 
       <div class="field">

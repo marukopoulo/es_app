@@ -13,7 +13,7 @@
 								<br>ESTASSはそんな皆さんのためのサービスです。
 								<br>あなたも丁寧な添削指導を受けて、次のステップに進みませんか？
 								</p>
-<a class="button white transparent" href="#main">Read More</a>
+								<a class="button white transparent" href="#main">事前登録受付中</a>
 
 							</div><!-- caption -->				
 						</div>									
@@ -34,7 +34,7 @@
 							<br>自分を客観的に見つめ、表現する方法を一緒に身につけましょう。</p>
 						</div>
 						<div class = "column five last">
-							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS%20image" alt=""></div>
+							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS" alt=""></div>
 
 						</div>
 					</div>	
@@ -83,7 +83,7 @@
 				</section>	
 				</div>
 
-				<div id="target">
+				<div id="sceen">
 				<section class="row section text-light" style="background-color:#4FC1E9">
 					<div class="row-content buffer even clear-after">	
 						<div class="column seven">
@@ -95,7 +95,7 @@
 							<br>サポートします。</p>
 						</div>
 						<div class = "column five last">
-							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS%20image" alt=""></div>
+							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS" alt=""></div>
 
 						</div>
 					</div>	
@@ -111,7 +111,7 @@
 							<br>高品質なサービスを提供しています。</p>
 						</div>
 						<div class = "column five last" style= "float:left">
-							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS%20image" alt=""></div>
+							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS" alt=""></div>
 
 						</div>
 				</div>	
@@ -120,12 +120,13 @@
 			<section class="row section text-light" style="background-color:#4FC1E9">
 					<div class="row-content buffer even clear-after">	
 						<div class="column seven">
-							<h2>自信を持ちたいあなた</h2>
-							<p>就職活動において、自信がある人は強いです。
-							<br>ESTASSは、初めの一歩を踏み出すあなたを応援します。</p>
+							<h2>自信を失った時に</h2>
+							<p>就職活動をしていると、<br>自信がなくなる場面がたくさんあります。
+							<br>そんなときこそ原点に戻り、	
+							<br>私たちと、志望動機や自己PRを磨きましょう。</p>
 						</div>
 						<div class = "column five last">
-							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS%20image" alt=""></div>
+							<div><img src="http://placehold.it/1008x756/ddd/fff&text=ESTASS" alt=""></div>
 
 						</div>
 					</div>	
@@ -142,7 +143,8 @@
 									<h4>通常プラン</h4>
 									<p class="text-s">1000文字につき1500円の基本プランです。
 									<br>入金確認後48時間以内に添削します。</p>
-									<a class="button transparent white" href="#">¥ 1500</a>
+									<%= link_to "¥ 1,500",new_user_registration_path, :class=>"button transparent white" %>
+
 								</div>
 							</div>
 							<div class="column four centertxt">
@@ -151,7 +153,7 @@
 									<h4>２回目プラン</h4>
 									<p class="text-s">2回目以降ご利用の方には
 									<br>500円引きでサービスします。</p>
-									<a class="button transparent white" href="#">¥ 1000</a>
+									<%= link_to "¥ 1,000",new_user_registration_path, :class=>"button transparent white" %>
 								</div>
 							</div>						
 							<div class="column four last centertxt">
@@ -160,131 +162,19 @@
 									<h4>特急オプション</h4>
 									<p class="text-s">基本プランを24時間以内に行います。
 									<br>お急ぎの方はこちらをどうぞ。</p>
-									<a class="button transparent white" href="#">+ ¥500</a>
+									<%= link_to "¥ 2,000",new_user_registration_path, :class=>"button transparent white" %>
 								</div>
 							</div>
 				</div>
 			</section>
 			</div>	
+		
 
-
-			<!-- メンバー紹介っぽいところ
-			<section class="row section text-light" style="background-color:#4FC1E9;">
-				<div class="row-content buffer even clear-after">
-					<div class="section-title"><h3>The Best Team in the World</h3></div>
-					<div class="column three">
-						<figure class="about-us">
-							<img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt="">
-							<figcaption>
-								<h4>Michael Dean</h4>
-								<p>UI/UX designer</p>
-								<div class="meta-social">
-									<ul class="inline">
-										<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-										<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-										<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-									</ul>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="column three">
-						<figure class="about-us">
-							<img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt="">
-							<figcaption>
-								<h4>Phoenix Morgan</h4>
-								<p>CEO and Head of Design</p>
-								<div class="meta-social">
-									<ul class="inline">
-										<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-										<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-										<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-									</ul>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="column three">
-						<figure class="about-us">
-							<img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt="">
-							<figcaption>
-								<h4>Helen Beck</h4>
-								<p>Public Relations</p>
-								<div class="meta-social">
-									<ul class="inline">
-										<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-										<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-										<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-									</ul>
-								</div>
-							</figcaption>
-						</figure>
-					</div>							
-					<div class="column three last">
-						<figure class="about-us">
-							<img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt="">
-							<figcaption>
-								<h4>Craig Edwards</h4>
-								<p>Web Developer</p>
-								<div class="meta-social">
-									<ul class="inline">
-										<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-										<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-										<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-									</ul>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-			</section>	-->				
-			<div id="users">
-			<section class="row section text-light" style="background-color:#3BAFDA;">
-				<div class="row-content buffer even clear-after">
-					<div class="section-title"><h3>利用者の声</h3></div>
-					<div class="testimonial-slider" data-autoplay="5000" data-pagination="true" data-transition="fade" data-autoheight="false">
-						<div class="quote">
-							<div class="column two">
-								<figure class="testimonial-img">
-									<img src="http://placehold.it/600x600/ddd/fff&text=ESTASS%20image" alt="">
-								</figure>
-							</div><!-- column -->
-							<div class="column ten last">
-								<p>"初めて提出したエントリーシートは不採用でした。自分ではどこに問題があったかわからず、このまま就職活動を続けるのが不安だったため利用しました。estasはどこが良くて、どこが悪いのかをわかりやすくコメントしてくれるだけでなく、どういうことを書いたり、またどういう書き方をすればいいか教えてくれたので、その後の就職活動にいかすことができました。不採用の原因究明に、使ってみるといいと思いました。</p>
-								<div class="author">女性, 慶應義塾大学（理系）, メーカー志望</div>
-							</div><!-- column -->
-						</div><!-- quote -->
-						<div class="quote">
-							<div class="column two">
-								<figure class="testimonial-img">
-									<img src="http://placehold.it/600x600/ddd/fff&text=ESTASS%20image" alt="">
-								</figure>
-							</div><!-- column -->
-							<div class="column ten last">								
-								<p>"とにかくどうしたらいいかわからなかったので、本当に助かりました。自分を客観的に見ていただき、自信がつきました！"</p>
-								<div class="author">男性, 神奈川大学（文系）, 銀行志望</div>
-							</div><!-- column -->
-						</div><!-- quote -->		
-						<div class="quote">
-							<div class="column two">
-								<figure class="testimonial-img">
-									<img src="http://placehold.it/600x600/ddd/fff&text=ESTASS%20image" alt="">
-								</figure>
-							</div><!-- column -->
-							<div class="column ten last">									
-								<p>"私の周りには最近の就職活動について相談できる人が１人もいませんでした。そんな中、ESTASSをツイッターで見つけ、使ってみると、本当に自分のことを考えてくれているんだなあというアドバイスを貰うことができました。無事、地元の企業に内定をもらうこともでき、満足しています。"</p>
-								<div class="author">女性, 西南学院大学（文系）, 銀行志望</div>
-							</div><!-- column -->									
-						</div><!-- quote -->							
-					</div><!-- testimonial-slider -->				
-				</div>
-			</section>	
-			</div>
 
 
 			<section class="row section call-to-action">
 				<div class="row-content buffer even animation">
-					<p>まずは無料登録をする！</p>
+					<p>サービス開始は6月中旬です。まずは事前登録から！</p>
 					<%= link_to "登録",new_user_registration_path, :class=>"button red",:style=>"margin:7px -10px 0px 0px" %>
 				</div>
 			</section>				

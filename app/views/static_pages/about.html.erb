@@ -12,7 +12,6 @@
       <% else %>
       Logged in as <strong><%= current_user.name %></strong>.
       <% end %>
-
       <%= link_to 'プロフィール変更', edit_user_registration_path %> |
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
     <% else %>

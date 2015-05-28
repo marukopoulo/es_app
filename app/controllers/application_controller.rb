@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
 
   # deviceのコントローラーのときに、下記のメソッドを呼ぶ
   before_action :configure_permitted_parameters, if: :devise_controller?
+  def after_sign_in_path_for(resource)
+    logined_path
+  end
+
+  def sign_out_path_for(resource)
+    root_path
+  end
 
 
   protected

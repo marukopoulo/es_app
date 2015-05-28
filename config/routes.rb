@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'static_pages#home'
   get 'static_pages/home'
+  get 'logined' => "static_pages#logined"
 
   get 'static_pages/about'
 
